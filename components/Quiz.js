@@ -38,6 +38,7 @@ class Quiz extends Component {
       this.setState((curState) => ({
         isEnd: true,
         score: isCorrectAns ? curState.score + 1 : curState.score,
+        showAns: false,
       }));
 
       removeLocalNotification().then(setLocalNotification);
@@ -46,12 +47,14 @@ class Quiz extends Component {
         index: curState.index + 1,
         side: "Question",
         score: isCorrectAns ? curState.score + 1 : curState.score,
+        showAns: false,
       }));
     }
   };
 
   restart = () => {
     this.setState({
+      showAns: false,
       isEnd: false,
       index: 0,
       side: "Answer",
