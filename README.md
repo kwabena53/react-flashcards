@@ -1,11 +1,12 @@
 ## Description
 
 This app is a react-native application that is terms the FlashCards. It is a simple game that uses.
-React-native, React Router, Hooks and Redux
+React-native, React Router, Hooks and Redux. It is a simple game that allows user to guess the answers behind a
+card and get a score for it. User can add their own deck and add their cards to it.
 
 ## Installing the app
 
-To run the application, enter the followin commands in the terminal:
+To run the application, enter the following commands in the terminal:
 
 ```
 $ git clone https://github.com/kwabena53/react-flashcards.git
